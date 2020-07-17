@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Vassili Artemjev](https://up.htmlacademy.ru/adaptive/20/user/92486).
-* Наставник: `Неизвестно`.
+* Наставник: [Анастасия Полозова](https://up.htmlacademy.ru/adaptive/20/user/258631).
 
 ---
 

@@ -1,0 +1,38 @@
+/* _blocks/product-card.scss */
+
+.product-card {
+  padding: 19px 0 25px;
+
+  &__title {
+    margin-bottom: 14px;
+    font-family: $font-highlight;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    text-transform: uppercase;
+    color: $special-grey-darkest;
+  }
+
+  &__title--expander {
+    margin-bottom: 8px;
+  }
+
+  &__info {
+    margin-bottom: 13px;
+  }
+
+  &__hint {
+    margin-bottom: 21px;
+    font-size: 12px;
+    line-height: 1.33;
+  }
+
+  &--expander {
+    padding-top: 79px;
+    text-align: center;
+    background-image: url(../../img/icon-plus.svg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 30px 30px;
+  }
+}

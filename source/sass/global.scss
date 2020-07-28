@@ -1,4 +1,4 @@
-/* _blocks/global.scss */
+/* global.scss */
 
 img {
   max-width: 100%;
@@ -20,7 +20,11 @@ p {
   margin: 0;
 }
 
-h1,h2,h3,h4,h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   margin: 0;
 }
 
@@ -37,3 +41,34 @@ h1,h2,h3,h4,h5 {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.main-heading {
+  font-family: $font-highlight;
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.secondary-heading {
+  font-family: $font-highlight;
+  font-size: 24px;
+  font-weight: 400;
+  color: $font-color-dark;
+}
+
+.main-button {
+  display: block;
+  min-width: 260px;
+  padding: 7px 10px;
+  font-family: $font-highlight;
+  font-weight: 400;
+  text-transform: uppercase;
+  background-color: $basic-green;
+  color: $font-color-light;
+  text-align: center;
+
+  &--no-accent {
+    background-color: $basic-grey;
+    color: $font-color-primary;
+  }
+}
+

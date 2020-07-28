@@ -1,0 +1,47 @@
+/* _blocks/advantages.scss */
+
+.advantages {
+
+  &__heading {
+    margin-bottom: 38px;
+    line-height: 1.11;
+  }
+
+  &__description {
+    margin-bottom: 20px;
+  }
+
+  &__description::before {
+    content: "";
+    display: inline-block;
+    margin-right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: $basic-green;
+  }
+
+  &__description--first::before {
+    background-image: url(../../img/advantage-leaf@1x.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__description--second::before {
+    background-image: url(../../img/advantage-powder@1x.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__description--third::before {
+    background-image: url(../../img/advantage-dining@1x.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__description--fourth::before {
+    background-image: url(../../img/advantage-clock@1x.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+}

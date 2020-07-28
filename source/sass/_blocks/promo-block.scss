@@ -1,6 +1,35 @@
 /* _blocks/promo-block.scss */
 
 .promo-block {
+  font-family: $font-highlight;
   color: $font-color-light;
-  background-color: $bg-color-interactive;
+  text-align: center;
+  background: linear-gradient(0deg, rgba(255,255,255,1) 30.4%, rgba(99,167,58,1) 30.4%);
+
+
+  &__wrapper {
+  background-image: url(../img/index-background-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  background-size: 320px 305px;
+  background-position: top center;
+  }
+
+  &__heading {
+    width: 249px;
+    margin: 0 auto;
+    padding: 27px 0 25px 0;
+    line-height: 1;
+  }
+
+  &__slogan {
+    margin-bottom: 29px;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 1;
+  }
+
+  &__promo-img {
+    display: block;
+    margin: 0 auto 3px;
+  }
 }

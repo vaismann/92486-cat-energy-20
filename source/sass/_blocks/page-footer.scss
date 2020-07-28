@@ -1,0 +1,40 @@
+/* _blocks/page-footer.scss */
+
+.page-footer {
+  width: 100%;
+  background-color: $special-grey-light;
+
+  &__logo {
+    border-bottom: 1px solid $special-grey;
+  }
+
+  &__logo-link {
+    display: flex;
+    width: 100%;
+    padding: 39px 10px 32px;
+  }
+  &__logo-icon {
+    margin: auto;
+  }
+
+  &__social {
+    padding: 20px 10px 21px;
+    border-bottom: 1px solid $special-grey;
+  }
+
+  &__copyright {
+
+  }
+
+  &__copyright-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 22px 0;
+  }
+
+  &__copyright-text {
+    font-size: 16px;
+  }
+}

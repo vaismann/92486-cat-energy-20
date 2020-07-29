@@ -1,0 +1,30 @@
+/* _blocks/product-category.scss */
+
+.product-category {
+  padding: 21px 20px 3px;
+  background-color: $basic-grey;
+
+  &__heading {
+    line-height: 1.54;
+    text-transform: uppercase;
+  }
+
+  &__description {
+    padding: 22px 0 23px;
+    border-bottom: 1px solid $special-grey;
+  }
+
+  &__link {
+    display: block;
+    width: 100%;
+    padding: 15px 0 15px;
+  }
+
+  &__link-text {
+    font-family: $font-highlight;
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+}

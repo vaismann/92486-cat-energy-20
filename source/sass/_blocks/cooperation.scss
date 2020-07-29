@@ -1,0 +1,27 @@
+/* _blocks/cooperation.scss */
+
+.cooperation {
+
+  &__info {
+    padding-top: 28px;
+    padding-bottom: 22px;
+  }
+
+  &__heading {
+    font-family: $font-highlight;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.12;
+    text-transform: uppercase;
+    color: $font-color-dark;
+  }
+
+  &__address {
+    line-height: 1.43;
+  }
+
+  &__map {
+    display: block;
+    margin: 0 auto;
+  }
+}

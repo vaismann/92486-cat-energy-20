@@ -1,0 +1,22 @@
+/* variables.scss */
+
+$basic-grey: #F2F2F2;
+$special-grey-light: #EBEBEB;
+$special-grey: #CDCDCD;
+$special-grey-dark: #666666;
+$special-grey-darker: #444444;
+$special-grey-darkest: #222222;
+$basic-green: #68B738;
+$basic-green-dark: #5EAA2F;
+$special-error: #FF8282;
+
+$font-color-primary: rgb(68, 68, 68);
+$font-color-light: rgb(255, 255, 255);
+$font-color-dark: rgb(0, 0, 0);
+
+@tablet-width: 768px;
+@desktop-width: 1200px;
+@mobile-width-only: 767px;
+
+$font-normal: 'Arial', 'Helvetica', sans-serif;
+$font-highlight: 'Oswald', 'Arial', 'Helvetica', sans-serif;

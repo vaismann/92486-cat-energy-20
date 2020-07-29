@@ -1,0 +1,12 @@
+/* _blocks/page.scss */
+
+.page {
+  height: 100%;
+  font-size: 14px;
+  font-family: $font-normal;
+  line-height: 18px;
+  &__body {
+    min-height: 100%;
+    color: $font-color-primary;
+  }
+}

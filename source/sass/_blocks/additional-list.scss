@@ -1,0 +1,13 @@
+/* _blocks/additional-list.scss */
+
+.additional-list {
+    color: $font-color-dark;
+
+    &__item {
+      margin-bottom: 15px;
+    }
+
+    &__label {
+      padding: 0 18px;
+    }
+}

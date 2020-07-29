@@ -12,23 +12,25 @@
   <header class="page-header">
     <div class="container">
       <div class="page-header__wrapper">
-        <a class="page-header__logo" href="index.html">
-          <img class="page-header__logo-img" src="https://via.placeholder.com/33x37" width="33" height="37" alt="Cat Energy">
-        </a>
-        <img class="page-header__logo-title" src="https://via.placeholder.com/101x18" width="101" height="18" alt="Cat Energy">
-        <nav class="page-header__nav header-nav">
-          <button class="header-nav__toggle" type="button">
-            <img class="header-nav__toggle-icon header-nav__toggle-icon--open" src="https://via.placeholder.com/24x18" width="24" height="18" alt="Открыть меню">
-            <img class="header-nav__toggle-icon header-nav__toggle-icon--close" src="https://via.placeholder.com/24x18" width="24" height="18" alt="Зактрыть меню">
+        <div class="page-header__top">
+          <a href="#" class="page-header__logo">
+            <img class="page-header__logo-img" src="https://via.placeholder.com/33x37" width="33" height="37" alt="Cat Energy">
+          </a>
+          <img class="page-header__logo-title" src="https://via.placeholder.com/101x18" width="101" height="18" alt="Cat Energy">
+          <button class="page-header__nav-toggle" type="button">
+            <img class="page-header__nav-toggle-icon page-header__nav-toggle-icon--open" src="https://via.placeholder.com/24x18" width="24" height="18" alt="Открыть меню">
+            <img class="page-header__nav-toggle-icon page-header__nav-toggle-icon--close" src="https://via.placeholder.com/24x18" width="24" height="18" alt="Зактрыть меню">
           </button>
+        </div>
+        <nav class="page-header__nav header-nav">
           <ul class="header-nav__list">
             <li class="header-nav__item">
               <a class="header-nav__link" href="index.html">Главная</a>
             </li>
             <li class="header-nav__item">
-              <a class="header-nav__link">Каталог продукции</a>
+              <a class="header-nav__link header-nav__link--active" href="#">Каталог продукции</a>
             </li>
-            <li class="header-nav__nav-item">
+            <li class="header-nav__item">
               <a class="header-nav__link" href="form.html">Подбор программы</a>
             </li>
           </ul>
@@ -39,7 +41,7 @@
   <main class="page-main">
     <section class="page-main__head-block head-block">
       <div class="container">
-        <h1 class="head-block__heading">Каталог продукции</h1>
+        <h1 class="head-block__heading main-heading">Каталог продукции</h1>
       </div>
     </section>
     <section class="page-main__catalog catalog">
@@ -47,28 +49,28 @@
       <div class="container">
         <div class="catalog__wrapper">
           <article class="catalog__product-card product-card">
-            <div class="product-card__info">
-              <div class="product-card__description">
-                <h3 class="product-card__title">Cat Energy PRO 500 г</h3>
-                <div class="product-card__product-details product-details">
-                  <div class="product-details__row">
-                    <span class="product-details__value">Объем</span>
-                    <span class="product-details__value">500 г</span>
-                  </div>
-                  <div class="product-details__row">
-                    <span class="product-details__value">Вкус</span>
-                    <span class="product-details__value">Курица</span>
-                  </div>
-                  <div class="product-details__row">
-                    <span class="product-details__value">Цена</span>
-                    <span class="product-details__value">700 Р.</span>
+              <div class="product-card__info">
+                <div class="product-card__description">
+                  <h3 class="product-card__title">Cat Energy PRO 500 г</h3>
+                  <div class="product-card__product-details product-details">
+                    <div class="product-details__row">
+                      <span class="product-details__value">Масса</span>
+                      <span class="product-details__value">500 г</span>
+                    </div>
+                    <div class="product-details__row">
+                      <span class="product-details__value">Вкус</span>
+                      <span class="product-details__value">Курица</span>
+                    </div>
+                    <div class="product-details__row">
+                      <span class="product-details__value">Цена</span>
+                      <span class="product-details__value">700 Р.</span>
+                    </div>
                   </div>
                 </div>
+                <div class="product-card__product-image">
+                  <img class="product-card__product-photo" src="https://via.placeholder.com/140x144" width="140" height="144" alt="Cat Energy Pro Курица 500gr">
+                </div>
               </div>
-              <div class="product-card__product-image">
-                <img class="product-card__product-photo" src="https://via.placeholder.com/140x144" width="140" height="144" alt="Cat Energy Pro Курица 500gr">
-              </div>
-            </div>
             <a class="product-card__button main-button" href="#">Заказать</a>
           </article>
           <article class="catalog__product-card product-card">
@@ -77,7 +79,7 @@
                 <h3 class="product-card__title">Cat Energy PRO 1000 г</h3>
                 <div class="product-card__product-details product-details">
                   <div class="product-details__row">
-                    <span class="product-details__value">Объем</span>
+                    <span class="product-details__value">Масса</span>
                     <span class="product-details__value">1000 г</span>
                   </div>
                   <div class="product-details__row">
@@ -102,7 +104,7 @@
                 <h3 class="product-card__title">Cat Energy PRO 500 г</h3>
                 <div class="product-card__product-details product-details">
                   <div class="product-details__row">
-                    <span class="product-details__value">Объем</span>
+                    <span class="product-details__value">Масса</span>
                     <span class="product-details__value">500 г</span>
                   </div>
                   <div class="product-details__row">
@@ -127,7 +129,7 @@
                 <h3 class="product-card__title">Cat Energy PRO 1000 г</h3>
                 <div class="product-card__product-details product-details">
                   <div class="product-details__row">
-                    <span class="product-details__value">Объем</span>
+                    <span class="product-details__value">Масса</span>
                     <span class="product-details__value">1000 г</span>
                   </div>
                   <div class="product-details__row">
@@ -152,7 +154,7 @@
                 <h3 class="product-card__title">Cat Energy Slim 500 г</h3>
                 <div class="product-card__product-details product-details">
                   <div class="product-details__row">
-                    <span class="product-details__value">Объем</span>
+                    <span class="product-details__value">Масса</span>
                     <span class="product-details__value">500 г</span>
                   </div>
                   <div class="product-details__row">
@@ -177,7 +179,7 @@
                 <h3 class="product-card__title">Cat Energy Slim 1000 г</h3>
                 <div class="product-card__product-details product-details">
                   <div class="product-details__row">
-                    <span class="product-details__value">Объем</span>
+                    <span class="product-details__value">Масса</span>
                     <span class="product-details__value">1000 г</span>
                   </div>
                   <div class="product-details__row">
@@ -202,7 +204,7 @@
                 <h3 class="product-card__title">Cat Energy Slim 500 г</h3>
                 <div class="product-card__product-details product-details">
                   <div class="product-details__row">
-                    <span class="product-details__value">Объем</span>
+                    <span class="product-details__value">Масса</span>
                     <span class="product-details__value">500 г</span>
                   </div>
                   <div class="product-details__row">
@@ -228,7 +230,7 @@
                 На самом деле вкусов гораздо больше!
               </p>
             </div>
-            <a href="#" class="product-card__button main-button main-button--expander">Показать все</a>
+            <a href="#" class="product-card__button main-button main-button--no-accent">Показать все</a>
           </section>
         </div>
       </div>
@@ -236,7 +238,7 @@
     <section class="page-main__add-catalog add-catalog">
       <div class="container">
         <div class="add-catalog__wrapper">
-          <h2 class="add-catalog__title">Дополнительные товары</h2>
+          <h2 class="add-catalog__title secondary-heading">Дополнительные товары</h2>
           <div class="add-catalog__add-product-list">
             <div class="add-catalog__add-product add-product">
               <h3 class="add-product__title">Сахарозаменитель</h3>

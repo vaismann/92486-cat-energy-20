@@ -6,6 +6,10 @@
   font-family: $font-normal;
   line-height: 18px;
   &__body {
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    align-content: start;
+    min-width: 320px;
     min-height: 100%;
     color: $font-color-primary;
   }

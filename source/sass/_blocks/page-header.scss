@@ -1,6 +1,7 @@
 /* _blocks/page-header.scss */
 
 .page-header {
+
   &__top {
     display: flex;
     justify-content: space-between;
@@ -11,5 +12,21 @@
   &__nav-toggle {
     border: none;
     background: none;
+  }
+
+  &__nav {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    .page-header {
+      &__nav {
+        position: relative;
+        opacity: 1;
+        pointer-events: auto;
+      }
+    }
   }
 }

@@ -1,0 +1,12 @@
+/* _blocks/plan-list.scss */
+
+.plan-list {
+
+  &__item:not(:last-child) {
+    margin-bottom: 13px;
+  }
+
+  &__label {
+    padding: 0 15px;
+  }
+}

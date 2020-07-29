@@ -2,4 +2,15 @@
 
 .head-block {
   padding: 27px 0 41px;
+
+  &__heading {
+    line-height: 1;
+  }
+
+  &__description {
+    padding-top: 37px;
+    font-family: $font-highlight;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
 }

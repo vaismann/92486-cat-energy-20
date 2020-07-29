@@ -1,7 +1,14 @@
 /* _blocks/product-card.scss */
 
 .product-card {
-  padding: 19px 0 25px;
+  margin-left: -20px;
+  margin-right: -20px;
+  padding: 19px 20px 25px;
+  border-bottom: 1px solid $special-grey;
+
+  &:first-child {
+    border-top: 1px solid $special-grey;
+  }
 
   &__title {
     margin-bottom: 14px;
@@ -32,7 +39,7 @@
     text-align: center;
     background-image: url(../../img/icon-plus.svg);
     background-repeat: no-repeat;
-    background-position: top center;
+    background-position: center 26px;
     background-size: 30px 30px;
   }
 }

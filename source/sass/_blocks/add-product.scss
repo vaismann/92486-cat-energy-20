@@ -1,0 +1,19 @@
+/* _blocks/add-product.scss */
+
+.add-product {
+  padding-top: 13px;
+  padding-bottom: 19px;
+  border-bottom: 1px solid $special-grey;
+
+  &__title {
+    font-size: 16px;
+    line-height: 1;
+    font-family: $font-highlight;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  &__details {
+      line-height: 1;
+    }
+}

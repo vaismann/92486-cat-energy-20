@@ -57,7 +57,7 @@ h5 {
 
 .main-button {
   display: block;
-  min-width: 260px;
+  width: 100%;
   padding: 7px 10px;
   font-family: $font-highlight;
   font-weight: 400;
@@ -65,6 +65,8 @@ h5 {
   background-color: $basic-green;
   color: $font-color-light;
   text-align: center;
+  border: none;
+  box-sizing: border-box;
 
   &--no-accent {
     background-color: $basic-grey;

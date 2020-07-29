@@ -14,19 +14,22 @@
     background: none;
   }
 
-  &__nav {
-    position: absolute;
-    opacity: 0;
-    pointer-events: none;
-  }
+}
 
-  @media (min-width: $tablet-width) {
-    .page-header {
-      &__nav {
-        position: relative;
-        opacity: 1;
-        pointer-events: auto;
-      }
+@media (min-width: $tablet-width) {
+  .page-header {
+    &__wrapper {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__nav-toggle {
+      display: none;
+    }
+
+    &__top {
+      justify-content: flex-start;
+      margin-right: auto;
     }
   }
 }

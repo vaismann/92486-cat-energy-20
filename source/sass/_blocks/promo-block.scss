@@ -36,12 +36,16 @@
 
 @media (min-width: $tablet-width) {
   .promo-block {
-    padding-left: 87px;
     color: $font-color-dark;
     text-align: start;
     background: none;
 
+    &__info {
+      padding-left: 87px;
+    }
+
     &__wrapper {
+      position: relative;
       background-image: none;
     }
 
@@ -52,11 +56,21 @@
     }
 
     &__slogan {
+      margin-bottom: 20px;
       font-size: 20px;
     }
 
     &__promo-link {
+      position: absolute;
+      top: 270px;
+      left: 87px;
       width: 244px;
+    }
+
+    &__promo-img {
+      width: 100%;
+      min-height: 690px;
+      margin: 0;
     }
   }
 }

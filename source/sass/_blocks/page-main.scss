@@ -23,6 +23,10 @@
 @media (min-width: $tablet-width) {
   .page-main {
 
+    &__promo-block {
+      margin-bottom: 0;
+    }
+
     &__advantages {
       margin-bottom: 47px;
     }

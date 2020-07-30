@@ -10,6 +10,10 @@
     border-top: 1px solid $special-grey;
   }
 
+  &__info {
+    margin-bottom: 13px;
+  }
+
   &__title {
     margin-bottom: 14px;
     font-family: $font-highlight;
@@ -22,10 +26,6 @@
 
   &__title--expander {
     margin-bottom: 8px;
-  }
-
-  &__info {
-    margin-bottom: 13px;
   }
 
   &__hint {
@@ -41,5 +41,43 @@
     background-repeat: no-repeat;
     background-position: center 26px;
     background-size: 30px 30px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+
+  .product-card {
+    margin: 0;
+    padding: 0 36px 40px;
+    border: none;
+
+    &:first-child {
+      border-top: none;
+    }
+
+    &__info {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__description {
+      flex-basis: 100%;
+    }
+
+    &__product-image {
+      order: -1;
+      flex-basis: 100%;
+      display: flex;
+    }
+
+    &__product-photo {
+      margin: auto;
+    }
+
+    &__title {
+      font-size: 20px;
+      line-height: 1.2;
+      text-align: center;
+    }
   }
 }

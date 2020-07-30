@@ -18,3 +18,13 @@
     margin-bottom: 0;
   }
 }
+
+
+@media (min-width: $tablet-width) {
+  .page-main {
+
+    &__advantages {
+      margin-bottom: 47px;
+    }
+  }
+}

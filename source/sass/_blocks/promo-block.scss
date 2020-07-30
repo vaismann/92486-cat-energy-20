@@ -4,14 +4,14 @@
   font-family: $font-highlight;
   color: $font-color-light;
   text-align: center;
-  background: linear-gradient(0deg, rgba(255,255,255,1) 30.4%, rgba(99,167,58,1) 30.4%);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 1) 30.4%, rgba(99, 167, 58, 1) 30.4%);
 
 
   &__wrapper {
-  background-image: url(../img/index-background-mobile@1x.jpg);
-  background-repeat: no-repeat;
-  background-size: 320px 305px;
-  background-position: top center;
+    background-image: url(../img/index-background-mobile@1x.jpg);
+    background-repeat: no-repeat;
+    background-size: 320px 305px;
+    background-position: top center;
   }
 
   &__heading {
@@ -31,5 +31,32 @@
   &__promo-img {
     display: block;
     margin: 0 auto 3px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .promo-block {
+    padding-left: 87px;
+    color: $font-color-dark;
+    text-align: start;
+    background: none;
+
+    &__wrapper {
+      background-image: none;
+    }
+
+    &__heading {
+      width: 414px;
+      margin: 0;
+      padding: 32px 0 41px 0;
+    }
+
+    &__slogan {
+      font-size: 20px;
+    }
+
+    &__promo-link {
+      width: 244px;
+    }
   }
 }

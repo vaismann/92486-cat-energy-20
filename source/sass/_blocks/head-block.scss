@@ -14,3 +14,11 @@
     text-transform: uppercase;
   }
 }
+
+
+@media (min-width: $tablet-width) {
+
+  .head-block {
+    padding-top: 41px;
+  }
+}

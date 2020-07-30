@@ -3,11 +3,17 @@
 .cooperation {
 
   &__info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
     padding-top: 28px;
     padding-bottom: 22px;
   }
 
   &__heading {
+    flex-basis: 140px;
+    padding-top: 5px;
     font-family: $font-highlight;
     font-weight: 400;
     font-size: 16px;
@@ -17,11 +23,41 @@
   }
 
   &__address {
+    flex-basis: 140px;
     line-height: 1.43;
   }
 
   &__map {
     display: block;
     margin: 0 auto;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .cooperation {
+
+    &__info {
+      padding-left: 41px;
+      padding-right: 42px;
+    }
+
+    &__heading {
+      flex-basis: 170px;
+      font-size: 20px;
+      line-height: 1;
+
+    }
+
+    &__address {
+      flex-basis: 159px;
+      text-align: right;
+      line-height: 1.25;
+    }
+
+    &__address-town {
+      display: block;
+      padding-top: 15px;
+    }
   }
 }

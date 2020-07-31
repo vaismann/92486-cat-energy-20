@@ -1,6 +1,7 @@
 /* _blocks/plan-list.scss */
 
 .plan-list {
+  color: $special-grey-darkest;
 
   &__item:not(:last-child) {
     margin-bottom: 13px;

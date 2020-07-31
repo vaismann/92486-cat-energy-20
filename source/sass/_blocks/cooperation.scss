@@ -1,6 +1,7 @@
 /* _blocks/cooperation.scss */
 
 .cooperation {
+  background-color: $basic-grey;
 
   &__info {
     display: flex;
@@ -58,6 +59,24 @@
     &__address-town {
       display: block;
       padding-top: 15px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .cooperation {
+    position: relative;
+
+    &__info {
+      position: absolute;
+      top: 65px;
+      width: 405px;
+      padding: 66px 89px 51px 76px;
+      background-color: $basic-white;
+    }
+
+    &__address {
+      text-align: left;
     }
   }
 }

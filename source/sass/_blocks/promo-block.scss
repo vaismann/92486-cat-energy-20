@@ -74,3 +74,34 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .promo-block {
+    background-image: url(../img/index-background-desktop@1x.jpg), linear-gradient(90deg, rgba(255, 255, 255, 1) 50%, rgba(99, 167, 58, 1) 50%);
+    background-repeat: no-repeat;
+    background-position: top right;
+
+
+    &__wrapper {
+      position: relative;
+      padding-top: 191px;
+      padding-bottom: 224px
+    }
+
+    &__info {}
+
+    &__promo-img {
+      position: absolute;
+      top: 191px;
+      left: 550px;
+      width: auto;
+      min-height: auto;
+    }
+
+    &__promo-link {
+      position: static;
+      z-index: 1;
+      margin-left: 87px;
+    }
+  }
+}

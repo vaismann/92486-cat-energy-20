@@ -11,10 +11,32 @@
   }
 
   &__info {
-    margin-bottom: 13px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18px;
+  }
+
+  &__description {
+    flex-basis: 50%;
+  }
+
+  &__product-image {
+    order: -1;
+    flex-basis: 50%;
+    display: flex;
+    background-color: $basic-white;
+  }
+
+  &__product-image--expander {
+    margin-bottom: 23px;
+  }
+
+  &__product-photo {
+    margin: auto;
   }
 
   &__title {
+    width: 74px;
     margin-bottom: 14px;
     font-family: $font-highlight;
     font-weight: 400;
@@ -24,7 +46,13 @@
     color: $special-grey-darkest;
   }
 
+  &__button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
   &__title--expander {
+    width: 100%;
     margin-bottom: 8px;
   }
 
@@ -35,29 +63,36 @@
   }
 
   &--expander {
-    padding-top: 79px;
+    padding-top: 26px;
     text-align: center;
-    background-image: url(../../img/icon-plus.svg);
-    background-repeat: no-repeat;
-    background-position: center 26px;
-    background-size: 30px 30px;
   }
 }
 
 @media (min-width: $tablet-width) {
 
   .product-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin: 0;
     padding: 0 36px 40px;
+    background: linear-gradient(0deg, rgba(234, 234, 234, 1) 84%, rgba(255, 255, 255, 1) 84%);
     border: none;
 
     &:first-child {
       border-top: none;
     }
 
+    &--expander {
+      padding-top: 89px;
+      background: none;
+      border: 2px solid $basic-grey;
+    }
+
     &__info {
       display: flex;
       flex-wrap: wrap;
+      flex-basis: 100%;
     }
 
     &__description {
@@ -65,9 +100,14 @@
     }
 
     &__product-image {
-      order: -1;
       flex-basis: 100%;
       display: flex;
+      margin-bottom: 34px;
+      background-color: transparent;
+    }
+
+    &__product-image--expander {
+      margin-bottom: 49px;
     }
 
     &__product-photo {
@@ -75,9 +115,24 @@
     }
 
     &__title {
+      width: 159px;
+      margin: 0 auto 21px;
       font-size: 20px;
       line-height: 1.2;
       text-align: center;
+    }
+
+     &__title--expander {
+      margin-bottom: 23px;
+     }
+
+    &__hint {
+      font-size: 16px;
+      line-height: 1.12;
+    }
+
+     &__button {
+      margin-top: auto;
     }
   }
 }

@@ -15,6 +15,10 @@
     border-bottom: 1px solid $special-grey;
   }
 
+  &__fieldset--cat-info {
+    padding-bottom: 23px;
+  }
+
   &__fieldset--target {
     padding-top: 20px;
     padding-bottom: 22px;
@@ -30,11 +34,18 @@
 
   &__fieldset--additional {
     border-bottom: none;
+    margin-bottom: 34px;
   }
 
   &__field-block {
+    display: flex;
+    align-items: center;
     width: 100%;
     margin-bottom: 13px;
+  }
+
+  &__field-block:last-child {
+    margin-bottom: 0;
   }
 
   &__label {
@@ -42,6 +53,8 @@
   }
 
   &__text-field {
+    flex-basis: auto;
+    flex-grow: 1;
     padding: 13px 14px;
     text-transform: uppercase;
     border-radius: 0;
@@ -71,6 +84,8 @@
     margin-bottom: 21px;
     font-size: 16px;
     line-height: 1.25;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   &__note {

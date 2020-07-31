@@ -33,3 +33,25 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    position: relative;
+
+    &--index {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: 1;
+    }
+
+    &__wrapper {
+      padding-top: 53px;
+      padding-bottom: 32px;
+    }
+
+    &__top {
+      padding: 0;
+    }
+  }
+}

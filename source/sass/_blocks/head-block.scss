@@ -8,9 +8,11 @@
   }
 
   &__description {
+    width: 226px;
     padding-top: 37px;
     font-family: $font-highlight;
     font-weight: 400;
+    color: $font-color-dark;
     text-transform: uppercase;
   }
 }

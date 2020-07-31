@@ -65,3 +65,20 @@
   }
 
 }
+
+@media (min-width: $desktop-width) {
+  .header-nav {
+    padding: 0;
+    font-size: 20px;
+    line-height: 1.5;
+
+    &--index {
+      color: $font-color-light;
+    }
+
+    &__link--active-index {
+      border-color: white;
+    }
+  }
+
+}

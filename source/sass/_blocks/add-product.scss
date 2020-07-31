@@ -5,7 +5,13 @@
   padding-bottom: 19px;
   border-bottom: 1px solid $special-grey;
 
+  &:first-child {
+    border-top: 1px solid $special-grey;
+  }
+
   &__title {
+    flex-basis: 100%;
+    margin-bottom: 13px;
     font-size: 16px;
     line-height: 1;
     font-family: $font-highlight;
@@ -14,6 +20,53 @@
   }
 
   &__details {
-      line-height: 1;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    line-height: 1;
     }
+
+  &__button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .add-product {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 26px 38px 28px;
+
+    &:first-child {
+      border-top: none;
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    &__title {
+      flex-basis: auto;
+      margin-right: auto;
+      font-size: 20px;
+    }
+
+    &__details {
+      flex-basis: 400px;
+      line-height: 1.25;
+      justify-content: flex-end;
+    }
+
+    &__amount {
+      flex-basis: auto;
+    }
+
+    &__price {
+      flex-basis: 54px;
+      margin-left: 40px;
+      text-align: right;
+    }
+  }
 }

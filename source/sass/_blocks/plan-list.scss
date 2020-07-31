@@ -11,3 +11,24 @@
     padding: 0 15px;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .plan-list {
+    padding: 25px 28px;
+    border: 1px solid $basic-grey;
+
+    &__item {
+      display: flex;
+      align-items: center;
+    }
+
+    &__value {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+}

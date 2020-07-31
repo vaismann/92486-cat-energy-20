@@ -11,3 +11,26 @@
       padding: 0 18px;
     }
 }
+
+@media (min-width: $tablet-width) {
+  .additional-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+     &__item {
+      flex-basis: 221px;
+      margin-right: 104px;
+    }
+
+    &__item:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional-list {
+    justify-content: flex-start;
+  }
+}

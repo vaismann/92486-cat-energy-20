@@ -70,3 +70,26 @@
     }
   }
 }
+
+
+@media (min-width: $desktop-width) {
+  .add-product {
+    align-items: baseline;
+    padding: 15px 0 17px;
+
+    &__title {
+      margin-bottom: 0;
+    }
+
+    &__details {
+      flex-basis: 286px;
+      justify-content: space-between;
+      margin-bottom: 0;
+    }
+
+    &__button {
+      flex-basis:  244px;
+      margin-left: 40px;
+    }
+  }
+}

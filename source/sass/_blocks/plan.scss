@@ -5,3 +5,19 @@
     margin-bottom: 32px;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .plan {
+    &__form {
+      margin-bottom: 72px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .plan {
+    &__form {
+      margin-bottom: 82px;
+    }
+  }
+}

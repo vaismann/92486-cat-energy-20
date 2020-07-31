@@ -22,5 +22,21 @@
 
   .head-block {
     padding-top: 41px;
+
+    &__description {
+      padding-left: 40px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+  .head-block {
+
+    &__description {
+      width: 323px;
+      padding-top: 56px;
+      padding-left: 0;
+    }
   }
 }

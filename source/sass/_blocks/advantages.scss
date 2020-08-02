@@ -7,41 +7,127 @@
     line-height: 1.11;
   }
 
-  &__description {
+  &__item {
+    display: flex;
+    align-items: center;
     margin-bottom: 20px;
   }
 
-  &__description::before {
+  &__item::before {
     content: "";
-    display: inline-block;
     margin-right: 20px;
-    width: 60px;
+    flex-basis: 60px;
+    flex-grow: 0;
+    flex-shrink: 0;
     height: 60px;
     background-color: $basic-green;
   }
 
-  &__description--first::before {
+  &__item--first::before {
     background-image: url(../../img/advantage-leaf@1x.png);
     background-repeat: no-repeat;
     background-position: center;
   }
 
-  &__description--second::before {
+  &__item--second::before {
     background-image: url(../../img/advantage-powder@1x.png);
     background-repeat: no-repeat;
     background-position: center;
   }
 
-  &__description--third::before {
+  &__item--third::before {
     background-image: url(../../img/advantage-dining@1x.png);
     background-repeat: no-repeat;
     background-position: center;
   }
 
-  &__description--fourth::before {
+  &__item--fourth::before {
     background-image: url(../../img/advantage-clock@1x.png);
     background-repeat: no-repeat;
     background-position: center;
+  }
+
+  &__description {
+    flex-basis: 71%;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .advantages {
+
+    &__heading {
+      margin-bottom: 32px;
+    }
+
+    &__list {
+      display: grid;
+      grid-template-columns: 247px 247px;
+      grid-column-gap: 137px;
+      grid-row-gap: 37px;
+    }
+
+    &__item {
+      position: relative;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      align-content: flex-start;
+      min-height: 240px;
+      padding-top: 40px;
+    }
+
+    &__item::before {
+      flex-basis: 80px;
+      height: 80px;
+      margin-bottom: 31px;
+    }
+
+    &__description {
+      flex-basis: 100%;
+      z-index: 1;
+    }
+
+    &__item::after {
+      position: absolute;
+      top: 0;
+      right: 20px;
+      font-family: $font-highlight;
+      font-size: 280px;
+      line-height: 1;
+      color: $basic-grey;
+      z-index: -1;
+    }
+
+    &__item--first::after {
+      content: '1';
+    }
+
+    &__item--second::after {
+      content: '2';
+    }
+
+    &__item--third::after {
+      content: '3';
+    }
+
+    &__item--fourth::after {
+      content: '4';
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages {
+
+    &__list {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-column-gap: 80px;
+      grid-row-gap: 82px;
+    }
+
+    &__item {
+      margin-bottom: 0;
+    }
   }
 
 }

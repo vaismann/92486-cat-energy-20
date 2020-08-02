@@ -6,3 +6,13 @@
     margin-bottom: 20px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .product-categories {
+    &__wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 84px;
+    }
+  }
+}

@@ -1,6 +1,7 @@
 /* _blocks/page-header.scss */
 
 .page-header {
+
   &__top {
     display: flex;
     justify-content: space-between;
@@ -11,5 +12,46 @@
   &__nav-toggle {
     border: none;
     background: none;
+  }
+
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    &__wrapper {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__nav-toggle {
+      display: none;
+    }
+
+    &__top {
+      justify-content: flex-start;
+      margin-right: auto;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    position: relative;
+
+    &--index {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: 1;
+    }
+
+    &__wrapper {
+      padding-top: 53px;
+      padding-bottom: 32px;
+    }
+
+    &__top {
+      padding: 0;
+    }
   }
 }

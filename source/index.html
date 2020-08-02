@@ -9,7 +9,7 @@
 </head>
 
 <body class="page__body">
-  <header class="page-header">
+  <header class="page-header page-header--index">
     <div class="container">
       <div class="page-header__wrapper">
         <div class="page-header__top">
@@ -22,10 +22,10 @@
             <img class="page-header__nav-toggle-icon page-header__nav-toggle-icon--close" src="https://via.placeholder.com/24x18" width="24" height="18" alt="Зактрыть меню">
           </button>
         </div>
-        <nav class="page-header__nav header-nav">
+        <nav class="page-header__nav header-nav header-nav--index">
           <ul class="header-nav__list">
             <li class="header-nav__item">
-              <a href="#" class="header-nav__link header-nav__link--active">Главная</a>
+              <a href="#" class="header-nav__link header-nav__link--active header-nav__link--active-index">Главная</a>
             </li>
             <li class="header-nav__item">
               <a href="catalog.html" class="header-nav__link">Каталог продукции</a>
@@ -43,8 +43,10 @@
     <section class="page-main__promo-block promo-block">
       <div class="container">
         <div class="promo-block__wrapper">
-          <h2 class="promo-block__heading main-heading">Функциональное питание для котов</h2>
-          <p class="promo-block__slogan">Занялся собой? Займись котом!</p>
+          <div class="promo-block__info">
+            <h2 class="promo-block__heading main-heading">Функциональное питание для котов</h2>
+            <p class="promo-block__slogan">Занялся собой? Займись котом!</p>
+          </div>
           <img class="promo-block__promo-img" src="https://via.placeholder.com/280x270" width="280" height="270" alt="Корм Cat Energy Pro со вкусом курицы">
           <a class="promo-block__promo-link main-button" href="form.html">Подобрать программу</a>
         </div>
@@ -54,7 +56,7 @@
       <h2 class="visually-hidden">Список категорий</h2>
       <div class="container">
         <div class="product-categories__wrapper">
-          <article class="product-categories__product-category product-category">
+          <article class="product-categories__product-category product-category product-category--slim">
             <h3 class="product-category__heading secondary-heading">Похудение</h3>
             <div class="product-category__icon-box">
               <img class="product-category__icon-img" src="https://via.placeholder.com/35x49" width="35" height="49" alt="Стройный кот">
@@ -67,7 +69,7 @@
               <img class="product-category__link-icon" src="https://via.placeholder.com/24x11" width="24" height="11" alt="Каталог Slim">
             </a>
           </article>
-          <article class="product-categories__product-category product-category">
+          <article class="product-categories__product-category product-category product-category--pro">
             <h3 class="product-category__heading secondary-heading">Набор массы</h3>
             <div class="product-category__icon-box">
               <img class="product-category__icon-img" src="https://via.placeholder.com/67x28" width="67" height="28" alt="Сильный кот">
@@ -88,23 +90,23 @@
         <div class="advantages__wrapper">
           <h2 class="advantages__heading main-heading">Как это работает</h2>
           <ul class="advantages__list">
-            <li class="advantages__item">
-              <p class="advantages__description advantages__description--first">
+            <li class="advantages__item advantages__item--first">
+              <p class="advantages__description">
                 Функциональное питание содержит только полезные питательные вещества.
               </p>
             </li>
-            <li class="advantages__item">
-              <p class="advantages__description advantages__description--second">
+            <li class="advantages__item advantages__item--second">
+              <p class="advantages__description">
                 Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
               </p>
             </li>
-            <li class="advantages__item">
-              <p class="advantages__description advantages__description--third">
+            <li class="advantages__item advantages__item--third">
+              <p class="advantages__description">
                 Замените один-два приема обычной еды на наше функциональное питание.
               </p>
             </li>
-            <li class="advantages__item">
-              <p class="advantages__description advantages__description--fourth">
+            <li class="advantages__item advantages__item--fourth">
+              <p class="advantages__description">
                 Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
               </p>
             </li>
@@ -115,23 +117,25 @@
     <section class="page-main__demo demo">
       <div class="container">
         <div class="demo__wrapper">
-          <h2 class="demo__heading main-heading">Живой пример</h2>
-          <p class="demo__description">
-            Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-          </p>
-          <div class="demo__stat-list">
-            <div class="demo__stat-item">
-              <span class="demo__stat-value">5 кг</span>
-              <span class="demo__stat-option">снижение веса</span>
-            </div>
-            <div class="demo__stat-item">
-              <span class="demo__stat-value">60 дней</span>
-              <span class="demo__stat-option">затрачено времени</span>
-            </div>
-            <p class="demo__caption">
-              <span>Затраты на питание:</span>
-              <span>15 000 руб.</span>
+          <div class="demo__info">
+            <h2 class="demo__heading main-heading">Живой пример</h2>
+            <p class="demo__description">
+              Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
             </p>
+            <div class="demo__stat-list">
+              <div class="demo__stat-item">
+                <span class="demo__stat-value">5 кг</span>
+                <span class="demo__stat-option">снижение веса</span>
+              </div>
+              <div class="demo__stat-item">
+                <span class="demo__stat-value">60 дней</span>
+                <span class="demo__stat-option">затрачено времени</span>
+              </div>
+              <div class="demo__caption">
+                <span class="demo__caption-info">Затраты на питание:</span>
+                <span class="demo__caption-info">15 000 руб.</span>
+              </div>
+            </div>
           </div>
           <div class="demo__progress">
             <div class="demo__image-wrapper">
@@ -153,48 +157,48 @@
       <div class="container">
         <div class=" cooperation__info">
           <h2 class="cooperation__heading">Приглашаем к сотрудничеству дилеров!</h2>
-          <p class="cooperation__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <p class="cooperation__address">ул. Большая Конюшенная, д. 19/8 <span class="cooperation__address-town">Санкт-Петербург</span></p>
         </div>
       </div>
       <img class="cooperation__map" src="https://via.placeholder.com/320x362" width="320" height="362" alt="Карта">
     </section>
-    <footer class="page-footer">
-      <div class="container">
-        <div class="page-footer__wrapper">
-          <div class="page-footer__logo">
-            <a href="#" class="page-footer__logo-link">
-              <img class="page-footer__logo-icon" src="https://via.placeholder.com/128x24" width="128" height="24" alt="Cat Energy">
-            </a>
-          </div>
-          <div class="page-footer__social">
-            <ul class="page-footer__social-list social-list">
-              <li class="social-list__item">
-                <a class="social-list__link" href="#">
-                  <img class="social-list__icon" src="https://via.placeholder.com/22x12" width="22" height="12" alt="Вконтакте">
-                </a>
-              </li>
-              <li class="social-list__item">
-                <a class="social-list__link" href="#">
-                  <img class="social-list__icon" src="https://via.placeholder.com/16x16" width="16" height="16" alt="Инстаграм">
-                </a>
-              </li>
-              <li class="social-list__item">
-                <a class="social-list__link" href="#">
-                  <img class="social-list__icon" src="https://via.placeholder.com/10x19" width="10" height="19" alt="Фейсбук">
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="page-footer__copyright">
-            <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-              <span class="page-footer__copyright-text">HTML Academy</span>
-              <img class="page-footer__copyright-icon" src="https://via.placeholder.com/27x34" width="27" height="34" alt="HTML Academy">
-            </a>
-          </div>
+  </main>
+  <footer class="page-footer">
+    <div class="container">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__logo">
+          <a href="#" class="page-footer__logo-link">
+            <img class="page-footer__logo-icon" src="https://via.placeholder.com/128x24" width="128" height="24" alt="Cat Energy">
+          </a>
+        </div>
+        <div class="page-footer__social">
+          <ul class="page-footer__social-list social-list">
+            <li class="social-list__item">
+              <a class="social-list__link" href="#">
+                <img class="social-list__icon" src="https://via.placeholder.com/22x12" width="22" height="12" alt="Вконтакте">
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link" href="#">
+                <img class="social-list__icon" src="https://via.placeholder.com/16x16" width="16" height="16" alt="Инстаграм">
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link" href="#">
+                <img class="social-list__icon" src="https://via.placeholder.com/10x19" width="10" height="19" alt="Фейсбук">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright">
+          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+            <span class="page-footer__copyright-text">HTML Academy</span>
+            <img class="page-footer__copyright-icon" src="https://via.placeholder.com/27x34" width="27" height="34" alt="HTML Academy">
+          </a>
         </div>
       </div>
-    </footer>
-  </main>
+    </div>
+  </footer>
 </body>
 
 </html>

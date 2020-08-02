@@ -4,14 +4,14 @@
   font-family: $font-highlight;
   color: $font-color-light;
   text-align: center;
-  background: linear-gradient(0deg, rgba(255,255,255,1) 30.4%, rgba(99,167,58,1) 30.4%);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 1) 30.4%, rgba(99, 167, 58, 1) 30.4%);
 
 
   &__wrapper {
-  background-image: url(../img/index-background-mobile@1x.jpg);
-  background-repeat: no-repeat;
-  background-size: 320px 305px;
-  background-position: top center;
+    background-image: url(../img/index-background-mobile@1x.jpg);
+    background-repeat: no-repeat;
+    background-size: 320px 305px;
+    background-position: top center;
   }
 
   &__heading {
@@ -31,5 +31,77 @@
   &__promo-img {
     display: block;
     margin: 0 auto 3px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .promo-block {
+    color: $font-color-dark;
+    text-align: start;
+    background: none;
+
+    &__info {
+      padding-left: 87px;
+    }
+
+    &__wrapper {
+      position: relative;
+      background-image: none;
+    }
+
+    &__heading {
+      width: 414px;
+      margin: 0;
+      padding: 32px 0 41px 0;
+    }
+
+    &__slogan {
+      margin-bottom: 20px;
+      font-size: 20px;
+    }
+
+    &__promo-link {
+      position: absolute;
+      top: 270px;
+      left: 87px;
+      width: 244px;
+    }
+
+    &__promo-img {
+      width: 100%;
+      min-height: 690px;
+      margin: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo-block {
+    background-image: url(../img/index-background-desktop@1x.jpg), linear-gradient(90deg, rgba(255, 255, 255, 1) 50%, rgba(99, 167, 58, 1) 50%);
+    background-repeat: no-repeat;
+    background-position: top right;
+
+
+    &__wrapper {
+      position: relative;
+      padding-top: 191px;
+      padding-bottom: 224px
+    }
+
+    &__info {}
+
+    &__promo-img {
+      position: absolute;
+      top: 191px;
+      left: 550px;
+      width: auto;
+      min-height: auto;
+    }
+
+    &__promo-link {
+      position: static;
+      z-index: 1;
+      margin-left: 87px;
+    }
   }
 }

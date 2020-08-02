@@ -8,9 +8,35 @@
   }
 
   &__description {
+    width: 226px;
     padding-top: 37px;
     font-family: $font-highlight;
     font-weight: 400;
+    color: $font-color-dark;
     text-transform: uppercase;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+
+  .head-block {
+    padding-top: 41px;
+
+    &__description {
+      padding-left: 40px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+  .head-block {
+
+    &__description {
+      width: 323px;
+      padding-top: 56px;
+      padding-left: 0;
+    }
   }
 }

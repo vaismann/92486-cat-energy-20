@@ -17,4 +17,51 @@
   &__cooperation {
     margin-bottom: 0;
   }
+
+  &__add-catalog {
+    margin-bottom: 35px;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .page-main {
+
+    &__promo-block {
+      margin-bottom: 0;
+    }
+
+    &__advantages {
+      margin-bottom: 47px;
+    }
+
+    &__catalog {
+      margin-bottom: 40px;
+    }
+
+    &__add-catalog {
+      margin-bottom: 76px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main {
+
+    &__promo-block {
+      margin-bottom: 82px;
+    }
+
+    &__product-categories {
+      margin-bottom: 71px;
+    }
+
+    &__advantages {
+      margin-bottom: 0;
+    }
+
+    &__add-catalog {
+      margin-bottom: 86px;
+    }
+  }
 }

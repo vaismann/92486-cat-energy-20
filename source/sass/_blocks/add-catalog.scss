@@ -1,15 +1,11 @@
 /* _blocks/add-catalog.scss */
 
 .add-catalog {
+  padding-top: 28px;
 
-  &__wrapper {
-    margin-bottom: 39px;
-  }
-
-  &__title {
+  &__heading {
     padding-bottom: 35px;
     line-height: 1;
-    border-bottom: 1px solid $special-grey;
   }
 
   &__promo {
@@ -30,5 +26,74 @@
     font-size: 16px;
     line-height: 1.25;
     text-align: center;
+  }
+
+  &__add-product-list {
+    margin-bottom: 39px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .add-catalog {
+
+    &__heading {
+      padding-bottom: 80px;
+    }
+
+    &__add-product-list {
+      border: 1px solid $special-grey;
+    }
+
+    &__promo {
+      min-width: 708px;
+      min-height: 200px;
+      background-image: url(../img/gift-photo-tablet@1x.jpg);
+      background-size: 708px 200px;
+    }
+
+    &__promo-description {
+      padding-top: 71px;
+      padding-left: 423px;
+      text-align: left;
+      margin: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .add-catalog {
+
+    &__wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+    }
+
+    &__heading {
+      flex-basis: 100%;
+    }
+
+    &__add-product-list {
+      flex-basis: 73%;
+      border-left: none;
+      border-right: none;
+      margin-bottom: 0;
+    }
+
+    &__promo {
+      flex-basis: 20%;
+      min-width: 245px;
+      min-height: 289px;
+      background-image: url(../img/gift-photo-desktop@1x.jpg);
+      background-size: 245px 289px;
+      margin-left: auto;
+    }
+
+    &__promo-description {
+      padding-top: 184px;
+      padding-left: 0;
+      text-align: center;
+      margin: 0 auto;
+    }
   }
 }

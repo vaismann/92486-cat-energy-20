@@ -12,7 +12,7 @@
   }
 }
 
-@media (min-width: $desktop-width, max-width: $desktop-width-max) {
+@media (min-width: $desktop-width) and (max-width: $desktop-width-max) {
   .container {
     padding: 0 7.64%;
   }

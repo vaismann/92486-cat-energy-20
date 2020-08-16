@@ -1,7 +1,6 @@
 /* _blocks/nav-toggle.scss */
 
 .nav-toggle {
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,6 +13,7 @@
   border: none;
 
   &__icon {
+    position: relative;
     width: 24px;
     height: 1.5px;
     background-color: $basic-black;
@@ -32,10 +32,24 @@
   }
 
   &__icon::before {
-    transform: translateY(-8px);
+    top: 8px;
   }
 
   &__icon::after {
-    transform: translateY(8px);
+    top: -8px;
+  }
+
+  &--opened .nav-toggle__icon {
+    background-color: transparent;
+  }
+
+  &--opened .nav-toggle__icon::before {
+    transform: rotate(45deg);
+    top: 0;
+  }
+
+  &--opened .nav-toggle__icon::after {
+    transform: rotate(-45deg);
+    top: 0;
   }
 }

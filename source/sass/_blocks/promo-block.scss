@@ -77,9 +77,18 @@
 
 @media (min-width: $desktop-width) {
   .promo-block {
-    background-image: url(../img/index-background-desktop@1x.jpg), linear-gradient(90deg, rgba(255, 255, 255, 1) 50%, rgba(99, 167, 58, 1) 50%);
+    position: relative;
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 1) 50%, rgba(99, 167, 58, 1) 50%);
     background-repeat: no-repeat;
     background-position: top right;
+
+    &::before {
+      content: url(../img/index-background-desktop@1x.jpg);
+      position: absolute;
+      left: 50%;
+      width: 720px;
+      height: auto;
+    }
 
 
     &__wrapper {

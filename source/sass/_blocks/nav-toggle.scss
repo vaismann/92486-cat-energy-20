@@ -1,0 +1,41 @@
+/* _blocks/nav-toggle.scss */
+
+.nav-toggle {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 16px;
+  padding: 0;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+  background: none;
+  border: none;
+
+  &__icon {
+    width: 24px;
+    height: 1.5px;
+    background-color: $basic-black;
+    transition: all .5s ease-in-out;
+  }
+
+  &__icon::before,
+  &__icon::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 24px;
+    height: 1.5px;
+    background-color: $basic-black;
+    transition: all .5s ease-in-out;
+  }
+
+  &__icon::before {
+    transform: translateY(-8px);
+  }
+
+  &__icon::after {
+    transform: translateY(8px);
+  }
+}

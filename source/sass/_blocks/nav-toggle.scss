@@ -11,17 +11,17 @@
   transition: all .5s ease-in-out;
   background: none;
   border: none;
+}
 
-  &__icon {
-    position: relative;
-    width: 24px;
-    height: 1.5px;
-    background-color: $basic-black;
-    transition: all .5s ease-in-out;
-  }
+.nav-toggle__icon {
+  position: relative;
+  width: 24px;
+  height: 1.5px;
+  background-color: $basic-black;
+  transition: all .5s ease-in-out;
 
-  &__icon::before,
-  &__icon::after {
+  &::before,
+  &::after {
     content: '';
     position: absolute;
     left: 0;
@@ -31,25 +31,31 @@
     transition: all .5s ease-in-out;
   }
 
-  &__icon::before {
+  &::before {
     top: 8px;
   }
 
-  &__icon::after {
+  &::after {
     top: -8px;
   }
+}
 
-  &--opened .nav-toggle__icon {
-    background-color: transparent;
-  }
+.nav-toggle--opened .nav-toggle__icon {
+  background-color: transparent;
 
-  &--opened .nav-toggle__icon::before {
+  &::before {
     transform: rotate(45deg);
     top: 0;
   }
 
-  &--opened .nav-toggle__icon::after {
+  &::after {
     transform: rotate(-45deg);
     top: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .nav-toggle {
+    display: none;
   }
 }

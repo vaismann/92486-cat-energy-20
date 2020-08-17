@@ -2,23 +2,18 @@
 
 @media (min-width: $tablet-width) {
 
-  .catalog {
-
-    &__wrapper {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-gap: 60px;
-    }
+  .catalog__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 60px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .catalog {
 
-    &__wrapper {
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-column-gap: 80px;
-      grid-row-gap: 63px;
-    }
+  .catalog__wrapper {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 80px;
+    grid-row-gap: 63px;
   }
 }

@@ -1,30 +1,25 @@
 /* _blocks/page-header.scss */
 
-.page-header {
-
-  &__top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 11px 0 17px 0;
-  }
+.page-header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 11px 0 17px 0;
 }
 
 @media (min-width: $tablet-width) {
-  .page-header {
-    &__wrapper {
-      display: flex;
-      flex-wrap: wrap;
-    }
+  .page-header__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-    &__nav-toggle {
-      display: none;
-    }
+  .page-header__nav-toggle {
+    display: none;
+  }
 
-    &__top {
-      justify-content: flex-start;
-      margin-right: auto;
-    }
+  .page-header__top {
+    justify-content: flex-start;
+    margin-right: auto;
   }
 }
 
@@ -38,14 +33,14 @@
       width: 100%;
       z-index: 1;
     }
+  }
 
-    &__wrapper {
-      padding-top: 53px;
-      padding-bottom: 32px;
-    }
+  .page-header__wrapper {
+    padding-top: 53px;
+    padding-bottom: 32px;
+  }
 
-    &__top {
-      padding: 0;
-    }
+  .page-header__top {
+    padding: 0;
   }
 }

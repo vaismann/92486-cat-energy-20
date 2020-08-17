@@ -2,19 +2,19 @@
 
 .head-block {
   padding: 27px 0 41px;
+}
 
-  &__heading {
-    line-height: 1;
-  }
+.head-block__heading {
+  line-height: 1;
+}
 
-  &__description {
-    width: 226px;
-    padding-top: 37px;
-    font-family: $font-highlight;
-    font-weight: 400;
-    color: $font-color-dark;
-    text-transform: uppercase;
-  }
+.head-block__description {
+  width: 226px;
+  padding-top: 37px;
+  font-family: $font-highlight;
+  font-weight: 400;
+  color: $font-color-dark;
+  text-transform: uppercase;
 }
 
 
@@ -22,21 +22,18 @@
 
   .head-block {
     padding-top: 41px;
+  }
 
-    &__description {
-      padding-left: 40px;
-    }
+  .head-block__description {
+    padding-left: 40px;
   }
 }
 
 @media (min-width: $desktop-width) {
 
-  .head-block {
-
-    &__description {
-      width: 323px;
-      padding-top: 56px;
-      padding-left: 0;
-    }
+  .head-block__description {
+    width: 323px;
+    padding-top: 56px;
+    padding-left: 0;
   }
 }

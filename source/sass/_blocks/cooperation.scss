@@ -2,81 +2,79 @@
 
 .cooperation {
   background-color: $basic-grey;
+}
 
-  &__info {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: center;
-    padding-top: 28px;
-    padding-bottom: 22px;
-  }
+.cooperation__info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  padding-top: 28px;
+  padding-bottom: 22px;
+}
 
-  &__heading {
-    flex-basis: 140px;
-    padding-top: 5px;
-    font-family: $font-highlight;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.12;
-    text-transform: uppercase;
-    color: $font-color-dark;
-  }
+.cooperation__heading {
+  flex-basis: 140px;
+  padding-top: 5px;
+  font-family: $font-highlight;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.12;
+  text-transform: uppercase;
+  color: $font-color-dark;
+}
 
-  &__address {
-    flex-basis: 140px;
-    line-height: 1.43;
-  }
+.cooperation__address {
+  flex-basis: 140px;
+  line-height: 1.43;
+}
 
-  &__map {
-    display: block;
-    margin: 0 auto;
-  }
+.cooperation__map {
+  display: block;
+  margin: 0 auto;
 }
 
 
 @media (min-width: $tablet-width) {
-  .cooperation {
 
-    &__info {
-      padding-left: 41px;
-      padding-right: 42px;
-    }
+  .cooperation__info {
+    padding-left: 41px;
+    padding-right: 42px;
+  }
 
-    &__heading {
-      flex-basis: 170px;
-      font-size: 20px;
-      line-height: 1;
+  .cooperation__heading {
+    flex-basis: 170px;
+    font-size: 20px;
+    line-height: 1;
 
-    }
+  }
 
-    &__address {
-      flex-basis: 159px;
-      text-align: right;
-      line-height: 1.25;
-    }
+  .cooperation__address {
+    flex-basis: 159px;
+    text-align: right;
+    line-height: 1.25;
+  }
 
-    &__address-town {
-      display: block;
-      padding-top: 15px;
-    }
+  .cooperation__address-town {
+    display: block;
+    padding-top: 15px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .cooperation {
     position: relative;
+  }
 
-    &__info {
-      position: absolute;
-      top: 65px;
-      width: 405px;
-      padding: 66px 89px 51px 76px;
-      background-color: $basic-white;
-    }
+  .cooperation__info {
+    position: absolute;
+    top: 65px;
+    width: 405px;
+    padding: 66px 89px 51px 76px;
+    background-color: $basic-white;
+  }
 
-    &__address {
-      text-align: left;
-    }
+  .cooperation__address {
+    text-align: left;
   }
 }

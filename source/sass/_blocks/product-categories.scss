@@ -1,18 +1,13 @@
 /* _blocks/product-categories.scss */
 
-.product-categories {
-
-  &__product-category {
-    margin-bottom: 20px;
-  }
+.product-categories__product-category {
+  margin-bottom: 20px;
 }
 
 @media (min-width: $desktop-width) {
-  .product-categories {
-    &__wrapper {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-gap: 84px;
-    }
+  .product-categories__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 84px;
   }
 }

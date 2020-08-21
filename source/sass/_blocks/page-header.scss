@@ -1,42 +1,37 @@
 /* _blocks/page-header.scss */
 
 .page-header {
+  position: relative;
+}
 
-  &__top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 11px 0 17px 0;
-  }
+.page-header__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
 
-  &__nav-toggle {
-    border: none;
-    background: none;
-  }
-
+.page-header__logo {
+  padding: 11px 0 16px;
 }
 
 @media (min-width: $tablet-width) {
-  .page-header {
-    &__wrapper {
-      display: flex;
-      flex-wrap: wrap;
-    }
+  .page-header__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-    &__nav-toggle {
-      display: none;
-    }
+  .page-header__nav-toggle {
+    display: none;
+  }
 
-    &__top {
-      justify-content: flex-start;
-      margin-right: auto;
-    }
+  .page-header__logo {
+    margin-right: auto;
+    padding: 24px 0 16px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-header {
-    position: relative;
 
     &--index {
       position: absolute;
@@ -44,14 +39,10 @@
       width: 100%;
       z-index: 1;
     }
+  }
 
-    &__wrapper {
-      padding-top: 53px;
-      padding-bottom: 32px;
-    }
-
-    &__top {
-      padding: 0;
-    }
+  .page-header__wrapper {
+    padding-top: 53px;
+    padding-bottom: 32px;
   }
 }

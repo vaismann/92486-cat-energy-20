@@ -3,12 +3,12 @@
 .product-details {
   font-size: 12px;
   line-height: 1.33;
+}
 
-  &__row {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 2px;
-  }
+.product-details__row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2px;
 }
 
 
@@ -16,10 +16,10 @@
   .product-details {
     font-size: 16px;
     line-height: 1;
+  }
 
-    &__row {
-      padding: 5px 0 9px;
-      border-bottom: 1px solid $special-grey;
-    }
+  .product-details__row {
+    padding: 5px 0 9px;
+    border-bottom: 1px solid $special-grey;
   }
 }

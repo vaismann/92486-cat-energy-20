@@ -1,22 +1,20 @@
 /* _blocks/social-list.scss */
 
 .social-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-    &__item {
-      margin-right: 16px;
-    }
+.social-list__item {
+  margin-right: 16px;
 
-    &__item:last-child {
-      margin-right: 0;
-    }
+  &:last-child {
+    margin-right: 0;
+  }
+}
 
-    &__link {
-      min-width: 23px;
-      padding: 10px;
-    }
-
-
+.social-list__link {
+  min-width: 23px;
+  padding: 10px;
 }

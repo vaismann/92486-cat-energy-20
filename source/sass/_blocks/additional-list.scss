@@ -1,15 +1,23 @@
 /* _blocks/additional-list.scss */
 
 .additional-list {
-    color: $font-color-dark;
+  color: $font-color-dark;
+}
 
-    &__item {
-      margin-bottom: 15px;
-    }
+.additional-list__item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 15px;
+}
 
-    &__label {
-      padding: 0 18px;
-    }
+.additional-list__label {
+  padding: 0 16px;
+}
+
+.additional-list__value {
+  width: 30px;
+  height: 30px;
 }
 
 @media (min-width: $tablet-width) {
@@ -17,25 +25,22 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
 
-
-     &__item {
-      flex-basis: 221px;
-    }
-
-
+  .additional-list__item {
+    flex-basis: 221px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .additional-list {
     justify-content: flex-start;
+  }
 
-    &__item {
-      margin-right: 104px;
-    }
+  .additional-list__item {
+    margin-right: 104px;
 
-    &__item:last-child {
+    &:last-child {
       margin-right: 0;
     }
   }

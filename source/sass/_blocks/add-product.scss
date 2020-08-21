@@ -8,28 +8,23 @@
   &:first-child {
     border-top: 1px solid $special-grey;
   }
+}
 
-  &__title {
-    flex-basis: 100%;
-    margin-bottom: 13px;
-    font-size: 16px;
-    line-height: 1;
-    font-family: $font-highlight;
-    font-weight: 400;
-    text-transform: uppercase;
-  }
+.add-product__title {
+  flex-basis: 100%;
+  margin-bottom: 13px;
+  font-size: 16px;
+  line-height: 1;
+  font-family: $font-highlight;
+  font-weight: 400;
+  text-transform: uppercase;
+}
 
-  &__details {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 15px;
-    line-height: 1;
-    }
-
-  &__button {
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
+.add-product__details {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  line-height: 1;
 }
 
 @media (min-width: $tablet-width) {
@@ -46,28 +41,28 @@
     &:last-child {
       border-bottom: none;
     }
+  }
 
-    &__title {
-      flex-basis: auto;
-      margin-right: auto;
-      font-size: 20px;
-    }
+  .add-product__title {
+    flex-basis: auto;
+    margin-right: auto;
+    font-size: 20px;
+  }
 
-    &__details {
-      flex-basis: 400px;
-      line-height: 1.25;
-      justify-content: flex-end;
-    }
+  .add-product__details {
+    flex-basis: 400px;
+    line-height: 1.25;
+    justify-content: flex-end;
+  }
 
-    &__amount {
-      flex-basis: auto;
-    }
+  .add-product__amount {
+    flex-basis: auto;
+  }
 
-    &__price {
-      flex-basis: 54px;
-      margin-left: 40px;
-      text-align: right;
-    }
+  .add-product__price {
+    flex-basis: 54px;
+    margin-left: 40px;
+    text-align: right;
   }
 }
 
@@ -76,20 +71,20 @@
   .add-product {
     align-items: baseline;
     padding: 15px 0 17px;
+  }
 
-    &__title {
-      margin-bottom: 0;
-    }
+  .add-product__title {
+    margin-bottom: 0;
+  }
 
-    &__details {
-      flex-basis: 286px;
-      justify-content: space-between;
-      margin-bottom: 0;
-    }
+  .add-product__details {
+    flex-basis: 286px;
+    justify-content: space-between;
+    margin-bottom: 0;
+  }
 
-    &__button {
-      flex-basis:  244px;
-      margin-left: 40px;
-    }
+  .add-product__button {
+    flex-basis: 244px;
+    margin-left: 40px;
   }
 }

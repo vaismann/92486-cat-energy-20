@@ -73,11 +73,18 @@
 }
 
 .demo__image-wrapper {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   margin-bottom: 13px;
+}
+
+.demo__image {
+  &--after {
+    display: none;
+  }
 }
 
 .demo__controls {
@@ -165,6 +172,11 @@
     margin-bottom: 9px;
   }
 
+  .demo__image-wrapper {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
   .demo__button {
     font-size: 20px;
     padding: 4px 10px 0;
@@ -189,7 +201,6 @@
 @media (min-width: $desktop-width) {
   .demo {
     background: linear-gradient(180deg, rgba(255, 255, 255, 1) 30%, rgba(242, 242, 242, 1) 30%);
-    border: none;
   }
 
   .demo__wrapper {

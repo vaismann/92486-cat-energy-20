@@ -1,8 +1,8 @@
 /* _blocks/product-card.scss */
 
 .product-card {
-  margin-left: -20px;
-  margin-right: -20px;
+  margin-left: -7%;
+  margin-right: -7%;
   padding: 19px 20px 25px;
   border-bottom: 1px solid $special-grey;
 
@@ -55,11 +55,6 @@
     width: 100%;
     margin-bottom: 8px;
   }
-}
-
-.product-card__button {
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
 
 .product-card__hint {

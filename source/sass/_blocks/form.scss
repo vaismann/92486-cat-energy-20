@@ -84,9 +84,6 @@
 .form__button {
   margin-bottom: 21px;
   font-size: 16px;
-  line-height: 1.25;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
 
 .form__note {
@@ -107,6 +104,7 @@
 
   .form__fieldset {
     margin: 0;
+    margin-bottom: 24px;
     padding-left: 40px;
     padding-right: 37px;
     border-bottom: none;
@@ -134,6 +132,9 @@
     flex-basis: 282px;
     margin-bottom: 0;
     margin-right: 61px;
+    font-size: 20px;
+    line-height: 1;
+    padding: 16px 10px;
   }
 
   .form__note {

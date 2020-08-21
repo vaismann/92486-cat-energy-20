@@ -4,7 +4,7 @@
   font-family: $font-highlight;
   color: $font-color-light;
   text-align: center;
-  background: linear-gradient(0deg, rgba(255, 255, 255, 1) 30.4%, rgba(99, 167, 58, 1) 30.4%);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 1) 36.5%, rgba(99, 167, 58, 1) 36.5%);
 }
 
 .promo-block__wrapper {
@@ -68,9 +68,9 @@
   }
 
   .promo-block__promo-img {
-    width: 100%;
-    min-height: 690px;
-    margin: 0;
+    width: 709px;
+    height: 690px;
+    margin: 0 auto;
   }
 }
 
@@ -100,7 +100,8 @@
     position: absolute;
     top: 191px;
     left: 550px;
-    width: auto;
+    width: 552px;
+    height: 499px;
     min-height: auto;
   }
 

@@ -21,25 +21,25 @@
   }
 
   &--first::before {
-    background-image: url(../../img/advantage-leaf@1x.png);
+    background-image: url("../img/advantage-leaf@1x.png");
     background-repeat: no-repeat;
     background-position: center;
   }
 
   &--second::before {
-    background-image: url(../../img/advantage-powder@1x.png);
+    background-image: url("../img/advantage-powder@1x.png");
     background-repeat: no-repeat;
     background-position: center;
   }
 
   &--third::before {
-    background-image: url(../../img/advantage-dining@1x.png);
+    background-image: url("../img/advantage-dining@1x.png");
     background-repeat: no-repeat;
     background-position: center;
   }
 
   &--fourth::before {
-    background-image: url(../../img/advantage-clock@1x.png);
+    background-image: url("../img/advantage-clock@1x.png");
     background-repeat: no-repeat;
     background-position: center;
   }

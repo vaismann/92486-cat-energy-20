@@ -11,8 +11,12 @@
   }
 
   &--expander {
-    padding-top: 26px;
+    padding-top: 80px;
     text-align: center;
+    background-image: url("../img/icon-plus-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    background-position: 50% 26px;
   }
 }
 
@@ -130,4 +134,16 @@
   .product-card__button {
     margin-top: auto;
   }
+}
+
+@media (min-width: $desktop-width) {
+
+  .product-card {
+
+    &--expander {
+    min-height: 168px;
+    margin-top: auto;
+    padding-top: 160px;
+  }
+}
 }

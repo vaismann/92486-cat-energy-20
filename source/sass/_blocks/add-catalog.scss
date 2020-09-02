@@ -13,7 +13,7 @@
   min-width: 280px;
   min-height: 289px;
   background-color: $basic-green;
-  background-image: url(../img/gift-photo-mobile@1x.jpg);
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: 280px 289px;
   background-position: top center;
@@ -27,6 +27,10 @@
   font-size: 16px;
   line-height: 1.25;
   text-align: center;
+  background-image: url("../img/icon-gift.svg");
+  background-repeat: no-repeat;
+  background-size: 55.5px 60px;
+  background-position: 50% 65px;
 }
 
 .add-catalog__add-product-list {
@@ -46,7 +50,7 @@
   .add-catalog__promo {
     min-width: 708px;
     min-height: 200px;
-    background-image: url(../img/gift-photo-tablet@1x.jpg);
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
     background-size: 708px 200px;
   }
 
@@ -55,6 +59,7 @@
     padding-left: 423px;
     text-align: left;
     margin: 0;
+    background-position: 89px 64px;
   }
 }
 
@@ -80,7 +85,7 @@
     flex-basis: 20%;
     min-width: 245px;
     min-height: 289px;
-    background-image: url(../img/gift-photo-desktop@1x.jpg);
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
     background-size: 245px 289px;
     margin-left: auto;
   }
@@ -90,5 +95,6 @@
     padding-left: 0;
     text-align: center;
     margin: 0 auto;
+    background-position: 50% 65px;
   }
 }

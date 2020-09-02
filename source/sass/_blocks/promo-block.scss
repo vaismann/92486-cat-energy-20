@@ -85,7 +85,7 @@
     background-position: top right;
 
     &::before {
-      content: url(../img/index-background-desktop@1x.jpg);
+      content: url("../img/index-background-desktop@1x.jpg");
       position: absolute;
       left: 50%;
       width: 720px;

@@ -1,7 +1,7 @@
 /* _blocks/cooperation.scss */
 
 .cooperation {
-  background-color: $basic-grey;
+  background-color: $basic-white;
 }
 
 .cooperation__info {
@@ -30,6 +30,7 @@
 }
 
 .cooperation__map {
+  width: 100%;
   display: block;
   margin: 0 auto;
 }

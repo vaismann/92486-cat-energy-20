@@ -203,6 +203,7 @@
 @media (min-width: $desktop-width) {
   .demo {
     background: linear-gradient(180deg, rgba(255, 255, 255, 1) 30%, rgba(242, 242, 242, 1) 30%);
+    border-top: none;
   }
 
   .demo__wrapper {

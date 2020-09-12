@@ -37,8 +37,7 @@
 }
 
 .page-footer__copyright-icon {
-  width: 27px;
-  height: 34px;
+  fill: $special-grey-dark;
 }
 
 
@@ -70,5 +69,32 @@
 
   .page-footer__copyright-text {
     margin-right: 22px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__logo-link {
+
+    &:hover {
+      opacity: .8;
+      transition: .3s;
+    }
+
+    &:active {
+      opacity: .6;
+      transition: 0s;
+    }
+  }
+
+  .page-footer__copyright-link {
+
+    &:hover .page-footer__copyright-icon {
+      fill: $basic-green;
+      transition: .3s;
+    }
+
+    &:active {
+      opacity: .3;
+    }
   }
 }

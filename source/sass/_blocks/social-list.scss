@@ -4,6 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .social-list__item {
@@ -15,6 +16,27 @@
 }
 
 .social-list__link {
+  display: flex;
   min-width: 23px;
   padding: 10px;
+}
+
+.social-list__icon {
+  margin: auto;
+  fill: $special-grey-dark;
+}
+
+@media (min-width: $desktop-width) {
+  .social-list__link {
+
+    &:hover .social-list__icon {
+      fill: $basic-green;
+      transition: .3s;
+    }
+
+    &:active .social-list__icon {
+      opacity: .3;
+      transition: 0s;
+    }
+  }
 }

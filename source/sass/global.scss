@@ -86,5 +86,22 @@ h5 {
 
   .main-button {
     padding: 8px 10px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $basic-green-dark;
+    }
+
+    &:active {
+      color: rgba($font-color-light, .3);
+    }
+
+    &--no-accent:hover {
+      background-color: $special-grey-light;
+    }
+
+    &--no-accent:active {
+      color: rgba($font-color-primary, .3);
+    }
   }
 }

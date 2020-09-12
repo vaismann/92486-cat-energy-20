@@ -48,6 +48,9 @@
             <p class="promo-block__slogan">Занялся собой? Займись котом!</p>
           </div>
           <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/index-can-desktop@1x.webp 1x, img/index-can-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/index-can-tablet@1x.webp 1x, img/index-can-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/index-can-mobile@1x.webp 1x, img/index-can-mobile@2x.webp 2x">
             <source media="(min-width: 1440px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
             <img class="promo-block__promo-img" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" width="280" height="270" alt="Корм Cat Energy Pro со вкусом курицы">
@@ -137,8 +140,17 @@
           </div>
           <div class="demo__progress">
             <div class="demo__image-wrapper">
-              <img class="demo__image demo__image--before" src="img/before-mobile@1x.png" width="320" height="240" alt="Толстый кот">
-              <img class="demo__image demo__image--after" src="img/after-mobile@1x.png" width="320" height="240" alt="Худой кот">
+              <picture>
+                <source type="image/webp" media="(min-width: 1440px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
+                <source media="(min-width: 1440px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+                <img class="demo__image demo__image--before" src="img/before-mobile@1x.png 1x" srcset="img/before-mobile@2x.png 2x" width="320" height="240" alt="Толстый кот">
+              </picture>
+              <picture>
+                <img class="demo__image demo__image--after" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" width="320" height="240" alt="Худой кот">
+              </picture>
             </div>
             <div class="demo__controls">
               <button class="demo__button" type="button">Было</button>
@@ -151,18 +163,15 @@
         </div>
       </div>
     </section>
-    <section class="page-main__cooperation cooperation">
+    <section class="page-main__cooperation cooperation cooperation--index">
       <div class="container">
-        <div class=" cooperation__info">
+        <div class="cooperation__info">
           <h2 class="cooperation__heading">Приглашаем к сотрудничеству дилеров!</h2>
           <p class="cooperation__address">ул. Большая Конюшенная, д. 19/8 <span class="cooperation__address-town">Санкт-Петербург</span></p>
         </div>
       </div>
-      <picture>
-        <source media="(min-width: 1440px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
-        <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
-        <img class="cooperation__map" src="img/bg-map-mobile@1x.png"  srcset="img/bg-map-mobile@2x.png 2x" width="320" height="362" alt="Карта">
-      </picture>
+      <div class="cooperation__map">
+      </div>
     </section>
   </main>
   <footer class="page-footer">

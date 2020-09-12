@@ -1,10 +1,15 @@
 /* _blocks/cooperation.scss */
 
 .cooperation {
-  background-color: $basic-white;
+  background-color: $basic-grey;
+
+  &--index {
+    background-color: $basic-white;
+  }
 }
 
 .cooperation__info {
+  z-index: 1;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -30,9 +35,19 @@
 }
 
 .cooperation__map {
+  position: relative;
+  min-width: 320px;
   width: 100%;
-  display: block;
-  margin: 0 auto;
+  height: 365px;
+  background-image: url("../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  background-color: $basic-grey;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/bg-map-mobile@2x.png");
+  }
 }
 
 
@@ -60,6 +75,15 @@
     display: block;
     padding-top: 15px;
   }
+
+  .cooperation__map {
+    height: 400px;
+    background-image: url("../img/bg-map-tablet@1x.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg-map-tablet@2x.png");
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -77,5 +101,13 @@
 
   .cooperation__address {
     text-align: left;
+  }
+
+  .cooperation__map {
+    background-image: url("../img/bg-map-desktop@1x.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg-map-desktop@2x.png");
+    }
   }
 }

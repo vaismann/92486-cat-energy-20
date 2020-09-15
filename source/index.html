@@ -143,15 +143,20 @@
                 <img class="demo__image demo__image--before" src="img/before-mobile@1x.png 1x" srcset="img/before-mobile@2x.png 2x" width="320" height="240" alt="Толстый кот">
               </picture>
               <picture>
+                <source type="image/webp" media="(min-width: 1440px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
+                <source media="(min-width: 1440px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
                 <img class="demo__image demo__image--after" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" width="320" height="240" alt="Худой кот">
               </picture>
             </div>
             <div class="demo__controls">
-              <button class="demo__button" type="button">Было</button>
+              <button class="demo__button demo__button--before" type="button">Было</button>
               <div class="demo__progress-bar">
-                <input class="demo__range" type="range" name="range" min="1" max="100" value="50">
+                <div class="demo__progress-toggle"></div>
               </div>
-              <button class="demo__button" type="button">Стало</button>
+              <button class="demo__button demo__button--after" type="button">Стало</button>
             </div>
           </div>
         </div>

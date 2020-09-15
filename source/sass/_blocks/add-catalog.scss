@@ -1,12 +1,12 @@
 /* _blocks/add-catalog.scss */
 
-.add-catalog {
-  padding-top: 28px;
-}
-
 .add-catalog__heading {
+  display: inline-block;
+  padding-right: 22px;
   padding-bottom: 35px;
   line-height: 1;
+  background-color: white;
+  z-index: 1;
 }
 
 .add-catalog__promo {
@@ -45,6 +45,8 @@
 
   .add-catalog__heading {
     padding-bottom: 80px;
+    padding-left: 37px;
+    padding-right: 37px;
   }
 
   .add-catalog__add-product-list {
@@ -72,14 +74,16 @@
 }
 
 @media (min-width: $desktop-width) {
-  .add-catalog__wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-  }
 
   .add-catalog__heading {
     flex-basis: 100%;
+    padding-left: 0;
+  }
+
+  .add-catalog__content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
   }
 
   .add-catalog__add-product-list {

@@ -145,5 +145,13 @@
     &--active-index {
       border-color: white;
     }
+
+    &:hover {
+      opacity: .6;
+    }
+
+    &:active {
+      opacity: .3;
+    }
   }
 }

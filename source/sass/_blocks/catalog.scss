@@ -1,10 +1,15 @@
 /* _blocks/catalog.scss */
 
 @media (min-width: $tablet-width) {
+  .catalog {
+    padding-top: 35px;
+  }
+
   .catalog__wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 60px;
+    grid-column-gap: 60px;
+    grid-row-gap: 76px;
   }
 }
 
@@ -12,6 +17,6 @@
   .catalog__wrapper {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-column-gap: 80px;
-    grid-row-gap: 63px;
+    grid-row-gap: 80px;
   }
 }

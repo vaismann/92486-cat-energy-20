@@ -1,7 +1,13 @@
 /* _blocks/product-categories.scss */
 
 .product-categories__product-category {
-  margin-bottom: 20px;
+  margin-bottom: 23px;
+}
+
+@media (min-width: $tablet-width) {
+  .product-categories__product-category {
+    margin-bottom: 33px;
+  }
 }
 
 @media (min-width: $desktop-width) {

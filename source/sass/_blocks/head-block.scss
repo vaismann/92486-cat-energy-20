@@ -10,6 +10,7 @@
 
 .head-block__description {
   width: 226px;
+  margin: 0;
   padding-top: 37px;
   font-family: $font-highlight;
   font-weight: 400;
@@ -20,17 +21,22 @@
 
 @media (min-width: $tablet-width) {
   .head-block {
-    padding-top: 41px;
+    padding-top: 36px;
+    padding-bottom: 64px;
   }
 
   .head-block__description {
+    width: 330px;
+    font-size: 20px;
+    padding-top: 54px;
     padding-left: 40px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .head-block {
-    padding-bottom: 81px;
+    padding-top: 22px;
+    padding-bottom: 62px;
   }
 
   .head-block__description {

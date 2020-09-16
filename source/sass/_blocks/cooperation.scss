@@ -20,6 +20,7 @@
 
 .cooperation__heading {
   flex-basis: 140px;
+  margin: 0;
   padding-top: 5px;
   font-family: $font-highlight;
   font-weight: 400;
@@ -30,6 +31,7 @@
 }
 
 .cooperation__address {
+  margin: 0;
   flex-basis: 140px;
   line-height: 1.43;
 }
@@ -79,14 +81,15 @@
 
 @media (min-width: $tablet-width) {
   .cooperation__info {
-    padding-left: 41px;
+    padding-top: 65px;
     padding-right: 42px;
+    padding-bottom: 58px;
+    padding-left: 41px;
   }
 
   .cooperation__heading {
     flex-basis: 170px;
     font-size: 20px;
-    line-height: 1;
   }
 
   .cooperation__address {
@@ -97,7 +100,7 @@
 
   .cooperation__address-town {
     display: block;
-    padding-top: 15px;
+    padding-top: 19px;
   }
 
   .cooperation__map-wrapper {
@@ -121,8 +124,9 @@
   }
 
   .cooperation__info {
+    z-index: 2;
     position: absolute;
-    top: 65px;
+    top: 90px;
     width: 405px;
     padding: 66px 89px 51px 76px;
     background-color: $basic-white;

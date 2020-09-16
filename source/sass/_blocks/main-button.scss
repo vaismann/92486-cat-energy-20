@@ -1,0 +1,57 @@
+.main-button {
+  display: block;
+  width: 100%;
+  padding: 11px 10px;
+  font-family: $font-highlight;
+  font-weight: 400;
+  text-transform: uppercase;
+  background-color: $basic-green;
+  color: $font-color-light;
+  text-align: center;
+  border: none;
+  box-sizing: border-box;
+
+  &--no-accent {
+    background-color: $basic-grey;
+    color: $font-color-primary;
+  }
+}
+
+.accent-section {
+  position: relative;
+
+  &::before {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 2px;
+    top: 14px;
+    right: 0;
+    background-color: $basic-green;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .main-button {
+    padding: 8px 10px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $basic-green-dark;
+    }
+
+    &:active {
+      color: rgba($font-color-light, 0.3);
+    }
+
+    &--no-accent:hover {
+      background-color: $special-grey-light;
+    }
+
+    &--no-accent:active {
+      color: rgba($font-color-primary, 0.3);
+    }
+  }
+}

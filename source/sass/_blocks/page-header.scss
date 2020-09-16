@@ -26,8 +26,10 @@
   }
 
   .page-header__logo {
+    width: 174px;
+    height: 51px;
     margin-right: auto;
-    padding: 24px 0 16px;
+    padding: 24px 0 31px;
   }
 }
 
@@ -42,15 +44,21 @@
   }
 
   .page-header__wrapper {
-    padding-top: 53px;
+    padding-top: 30px;
     padding-bottom: 32px;
   }
 
-  .page-header__logo:hover {
-    opacity: 0.8;
-  }
+  .page-header__logo {
+    width: 202px;
+    height: 59px;
+    padding: 24px 0 23px;
 
-  .page-header__logo:active {
-    opacity: 0.6;
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
   }
 }

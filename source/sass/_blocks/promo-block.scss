@@ -66,8 +66,8 @@
 
   .promo-block__promo-link {
     position: absolute;
-    top: 270px;
-    left: 87px;
+    top: 264px;
+    left: 82px;
     width: 244px;
     font-size: 20px;
     line-height: 1;
@@ -101,16 +101,24 @@
     }
   }
 
+  .promo-block__info {
+    padding-left: 80px;
+  }
+
+  .promo-block__slogan {
+    margin-bottom: 51px;
+  }
+
   .promo-block__wrapper {
     position: relative;
     padding-top: 191px;
-    padding-bottom: 224px;
+    padding-bottom: 192px;
   }
 
   .promo-block__promo-img {
     position: absolute;
-    top: 191px;
-    left: 550px;
+    top: 141px;
+    left: 448px;
     width: 552px;
     height: 499px;
     min-height: auto;
@@ -119,6 +127,6 @@
   .promo-block__promo-link {
     position: static;
     z-index: 1;
-    margin-left: 87px;
+    margin-left: 80px;
   }
 }

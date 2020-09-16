@@ -8,7 +8,7 @@
 }
 
 .social-list__item {
-  margin-right: 16px;
+  margin-right: 9px;
 
   &:last-child {
     margin-right: 0;
@@ -24,6 +24,12 @@
 .social-list__icon {
   margin: auto;
   fill: $special-grey-dark;
+}
+
+@media (min-width: $tablet-width) {
+  .social-list__item {
+    margin-right: 7px;
+  }
 }
 
 @media (min-width: $desktop-width) {

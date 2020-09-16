@@ -2,7 +2,7 @@
 
 .add-product {
   padding-top: 13px;
-  padding-bottom: 19px;
+  padding-bottom: 16px;
   border-bottom: 1px solid $special-grey;
 
   &:first-child {
@@ -12,6 +12,7 @@
 
 .add-product__title {
   flex-basis: 100%;
+  margin: 0;
   margin-bottom: 13px;
   font-size: 16px;
   line-height: 1;
@@ -25,6 +26,10 @@
   justify-content: space-between;
   margin-bottom: 15px;
   line-height: 1;
+}
+
+.add-product__button {
+  font-size: 16px;
 }
 
 @media (min-width: $tablet-width) {
@@ -46,6 +51,7 @@
   .add-product__title {
     flex-basis: auto;
     margin-right: auto;
+    margin-bottom: 24px;
     font-size: 20px;
   }
 

@@ -49,7 +49,8 @@
 }
 
 .product-category__description {
-  padding: 22px 0 23px;
+  width: 99%;
+  padding: 29px 0 23px;
   border-bottom: 1px solid $special-grey;
 }
 
@@ -57,7 +58,7 @@
   display: flex;
   align-items: center;
   width: 100%;
-  padding: 15px 15px 15px 0;
+  padding: 15px 15px 21px 0;
   font-family: $font-highlight;
   font-size: 16px;
   line-height: 1;
@@ -122,13 +123,22 @@
 
   .product-category__description {
     min-height: 96px;
-    padding: 24px 0 33px;
+    padding: 27px 0 33px;
     width: 63%;
     border-bottom: none;
   }
 
   .product-category__link {
+    padding-top: 22px;
     font-size: 20px;
+
+    &--slim::after {
+      margin-left: 26px;
+    }
+
+    &--pro::after {
+      margin-left: 27px;
+    }
   }
 }
 
@@ -171,6 +181,8 @@
   }
 
   .product-category__link {
+    padding-top: 0;
+
     &:hover::after {
       background-image: url("../img/icon-right-arrow-verylong.svg");
     }

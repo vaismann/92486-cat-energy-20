@@ -10,6 +10,12 @@
   line-height: 1;
 }
 
+.header-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .header-nav__toggle {
   position: absolute;
   top: 0;
@@ -83,7 +89,7 @@
 .header-nav__link {
   display: block;
   width: 100%;
-  padding: 22px 0 24px;
+  padding: 20px 0 24px;
 }
 
 @media (min-width: $tablet-width) {

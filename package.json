@@ -1,14 +1,13 @@
 {
-  "name": "cat-energy-20",
-  "private": true,
-  "description": "Личный проект «Кэт энерджи» от HTML Academy",
+  "name": "92486-cat-energy-20",
+  "version": "1.0.0",
+  "description": "* Студент: [Vassili Artemjev](https://up.htmlacademy.ru/adaptive/20/user/92486). * Наставник: [Анастасия Полозова](https://up.htmlacademy.ru/adaptive/20/user/258631).",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "9.8.4",
     "browser-sync": "^2.26.12",
     "gulp": "4.0.2",
     "gulp-csso": "^4.0.1",
-    "gulp-debug": "^4.0.0",
     "gulp-imagemin": "^7.1.0",
     "gulp-plumber": "1.2.1",
     "gulp-postcss": "8.0.0",
@@ -24,8 +23,9 @@
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
-    "build": "gulp styles",
-    "start": "gulp"
+    "build": "gulp build",
+    "styles": "gulp styles",
+    "start": "gulp start"
   },
   "browserslist": [
     "last 2 versions",
@@ -44,8 +44,17 @@
     "node": "12.18.2"
   },
   "dependencies": {
-    "deep-extend": "^0.6.0",
-    "del": "^5.1.0",
-    "merge": "^1.2.1"
-  }
+    "del": "^5.1.0"
+  },
+  "main": "gulpfile.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vaismann/92486-cat-energy-20.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vaismann/92486-cat-energy-20/issues"
+  },
+  "homepage": "https://github.com/vaismann/92486-cat-energy-20#readme"
 }

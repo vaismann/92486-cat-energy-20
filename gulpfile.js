@@ -23,6 +23,8 @@ const styles = () => {
     .pipe(postcss([
       autoprefixer()
     ]))
+    .pipe(rename('style.css'))
+    .pipe(gulp.dest('./build/css'))
     .pipe(csso())
     .pipe(rename("styles.min.css"))
     .pipe(sourcemap.write("."))
@@ -63,17 +65,18 @@ const watcher = () => {
 }
 exports.default = gulp.series(styles, html, server, watcher);
 
-// Images
+// Imagemin
 
 const images = () => {
-  return gulp.src("source/img/**/*.{jpg,png,svg}")
+  return gulp.src('source/img/**/*.{jpg, png, svg}')
     .pipe(imagemin([
-      imagemin.optipng({ optimizationLevel: 3 }),
-      imagemin.jpegtran({ progressive: true }),
-      imagemin.svgo(),
+        imagemin.optipng({optimizationLevel: 3}),
+        imagemin.mozjpeg({proggressive: true}),
+        imagemin.svgo()
     ]))
-    .pipe(gulp.dest("source/img/optim"));
 }
+
+exports.images = images;
 
 // WEBP
 
@@ -106,7 +109,7 @@ const copy = () => {
     "source/*.ico",
     "source/*.html"
   ], {
-    base: "source"
+      base: "source"
   })
   .pipe(gulp.dest("build"))
 }
@@ -115,8 +118,8 @@ exports.copy = copy;
 // Clean
 
 const clean = () => {
-  return del("build");
-};
+  return del("build")
+}
 
 exports.clean = clean;
 

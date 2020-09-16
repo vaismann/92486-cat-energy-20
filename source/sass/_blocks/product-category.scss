@@ -171,13 +171,12 @@
   }
 
   .product-category__link {
-
     &:hover::after {
       background-image: url("../img/icon-right-arrow-verylong.svg");
     }
 
     &:active {
-      opacity: .3;
+      opacity: 0.3;
     }
   }
 }

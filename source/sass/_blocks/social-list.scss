@@ -28,14 +28,13 @@
 
 @media (min-width: $desktop-width) {
   .social-list__link {
-
     &:hover .social-list__icon {
       fill: $basic-green;
-      transition: .3s;
+      transition: 0.3s;
     }
 
     &:active .social-list__icon {
-      opacity: .3;
+      opacity: 0.3;
       transition: 0s;
     }
   }

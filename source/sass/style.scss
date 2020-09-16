@@ -1,7 +1,7 @@
-@import "normalize.scss";
-@import "variables.scss";
-@import "fonts.scss";
-@import "global.scss";
+@import "_global/normalize.scss";
+@import "_global/variables.scss";
+@import "_global/fonts.scss";
+@import "_global/global.scss";
 @import "_blocks/page.scss";
 @import "_blocks/container.scss";
 @import "_blocks/page-header.scss";
@@ -21,6 +21,5 @@
 @import "_blocks/add-product.scss";
 @import "_blocks/plan.scss";
 @import "_blocks/form.scss";
-@import "_blocks/additional-list.scss";
 @import "_blocks/social-list.scss";
 @import "_blocks/catalog.scss";

@@ -227,7 +227,7 @@
     padding: 4px 10px 0;
 
     &::after {
-      content: '';
+      content: "";
       display: block;
       padding-top: 4px;
       border-bottom: 1px dotted $special-grey;
@@ -250,7 +250,7 @@
     border: 1px solid $special-grey;
     border-radius: 50%;
     background-color: $basic-white;
-    filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.16));
+    filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
 
     &::after {
       z-index: 1;
@@ -332,7 +332,7 @@
     cursor: pointer;
 
     &:hover {
-      filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.19));
+      filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.19));
     }
 
     &:active {

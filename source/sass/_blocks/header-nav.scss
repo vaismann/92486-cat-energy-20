@@ -33,7 +33,7 @@
   height: 1.5px;
   background-color: $basic-black;
   box-shadow: 0 8px 0 0 $basic-black, 0 16px 0 0 $basic-black;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .header-nav--closed .header-nav__list {
@@ -41,7 +41,6 @@
 }
 
 .header-nav--opened .header-nav__toggle {
-
   &::before,
   &::after {
     content: "";
@@ -51,7 +50,7 @@
     width: 24px;
     height: 1.5px;
     background-color: $basic-black;
-    transition: all .2s ease-in-out;
+    transition: all 0.2s ease-in-out;
   }
 
   &::before {
@@ -120,7 +119,6 @@
 
   .header-nav__link {
     width: auto;
-    padding: 0;
     padding: 16px 0 10px;
 
     &--active {
@@ -141,17 +139,16 @@
   }
 
   .header-nav__link {
-
     &--active-index {
       border-color: white;
     }
 
     &:hover {
-      opacity: .6;
+      opacity: 0.6;
     }
 
     &:active {
-      opacity: .3;
+      opacity: 0.3;
     }
   }
 }
